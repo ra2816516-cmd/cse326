@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a class="logo" href="#home">Campus <span>Connect</span></a>
+            <nav>
+                <a href="#home"></a>
+                <a href="#events"></a>
+                <a href="#registration"></a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- HOME PAGE -->
+         <section id="home" class="hero">
+            <div class="container hero-content">
+                <p class="eyebrow">YOUR CAMPUS,YOUR EXPERIENCE.</p>
+                <h1>Find your next<br><span>campus experience.</span></h1>
+                <p class="hero-text">
+                    Discover college events, explore activities and register for the experiences that interset you.
+                </p>
+                <a class="button" href="#events">Explore Events</a>
+            </div>
+         </section>
+         <section id="events" class="section container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">WHAT'S HAPPENING</p>
+                    <h2>Upcoming Events</h2>
+                </div>
+                <p class="muted">Choose an event and be a part of it.</p>
+            </div>
+            <div class="event-grid">
+                <article class="event-card">
+                    <img src="images (3).jpg" alt="People enjoying a music event">
+                    <div class="event-info">
+                        <span class="tag">Cultural</span>
+                        <h3>Campus Music Fest</h3>
+                        <p class="event-date">28 November 2026</p>
+                        <p>A lively evening of music, performances and student talent.</p>
+                        <button class="button event-button" data-event="Campus Music Fest">View Details</button>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <img src="images (4).jpg" alt="Audience attending a conference">
+                    <div class="event-info">
+                        <span class="tag">Academic</span>
+                        <h3>Business Ideas Summit</h3>
+                        <p class="event-date">1 December 2026</p>
+                        <p>Share ideas, learn from discussions and explore entrepreneurship</p>
+                   </div>
+                </article>
+                <article class="event-card">
+                    <img src="images (5).jpg" alt="Students working together on laptops">
+                    <div class="event-info">
+                        <span class="tag">Technology</span>
+                        <h3>Tech Innovation Day</h3>
+                        <p class="event-date">4 December 2026</p>
+                        <p>Explore student's projects, technology and creative solutions.</p>
+                        <button class="button event-button" date-event="Tech Innovation Day"></button>
+                    </div>
+                </article>
+            </div>
+         </section>
+         <!-- EVENT DETAILS -->
+          <section id="details" class="section details-section">
+            <div class="container details-box">
+            </div>
+            <p class="eyebrow">EVENT INFORMATION</p>
+            <h2 id="detail-title">Campus Music Fest</h2>
+            <p id="detail-description">A lively evening of music, performances and student talent</p>
+            <div class="detail-list">
+                <p><strong>Date:</strong> <span id="detail-date">28 November 2026</span></p>
+                <p><strong>Time:</strong> <span id="detail-time">4:00 PM onwards</span></p>
+        </div>
+        <div class="details-note">
+            <span class="note-icon"></span>
+            <h3>Make the most of campus life.</h3>
+            <p>Check the event information before submitting your registration.</p>
+        </div>
+          </section>
+          <!-- REGISTRATION FORM -->
+           <section id="registration" class="section container">
+            <div class="form-layout">
+                <div>
+                <p class="eyebrow">SAVE YOUR SPOT</p>
+                <h2>Event Registration</h2>
+                <p class="muted">Enter your details carefully to register for an event</p>
+            </div>
+            <form id="registration-form" class="registration-form">
+                <label for="student-name">Student Name</label>
+                <input type="text" id="student-name" placeholder="Enter your full name">
+
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" placeholder="Enter your student id">
+
+                <label for="student-email">Email Address</label>
+                <input type="email" id="student-email" placeholder="Enter your email address">
+
+                <label for="event-choice">Select Event</label>
+                <select id="event-choice">
+                    <option value="">Choose an event</option>
+                    <option value="Campus Music Fest">Campus Music Fest</option>
+                    <option value="Business Ideas Summit">Business Ideas Summit</option>
+                    <option value="Tech Innovation Day">Tech Innovation Day</option>
+                </select>
+                <p id="form-error" class="error-message" aria-live="polite"></p>
+                <button type="submit" class="button">Submit Registration</button>
+            </form>
+        </div>
+    </section>
+    <!-- CONFIRMATION MESSAGE -->
+     <section id="confirmation" class="section container hidden">
+        <div class="confirmation-box">
+            <div class="success-mark"></div>
+            <p class="eyebrow">REGISTRATION COMPLETE</p>
+            <h2>You're registered!</h2>
+            <p id="confirmation-text">Your registration has been saved successfully</p>
+            <a href="#registration" class="button">View My Registration/a>
+                </div>
+             </section>
+             <!-- MY REGISTRATIONS -->
+              <section id="registration" class="section container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">YOUR EVENT ACTIVITY</p>
+                        <h2>My Registrations</h2>
+                    </div>
+                    <p class="mute">Your saved event registrations appear hear</p>
+                </div>
+                <div id="registration-list" class="registartiom-list">
+                    <p class="empty-message">You have not registered for any events yet</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>CampusConnect- Camous Event Management and Registration Portal</p>
+            <p class="footer-small">A front-end academic project using HTMl,CSS and JavaScript</p>
+       </div>
+    </footer>
+</body>
+</html>
