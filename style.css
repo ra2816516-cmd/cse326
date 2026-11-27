@@ -1,3 +1,7 @@
+*{
+    box-sizing:border-box;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
     color: #20283a;
@@ -233,10 +237,10 @@ h2 {
 }
 
 .form-layout {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1.2fr; */
-    /* gap: 50px; */
-    /* align-items: start; */
+     display: grid; 
+     grid-template-columns: 1fr 1.2fr; 
+     gap: 50px; 
+     align-items: start; 
 }
 
 .registration-form {
@@ -257,7 +261,7 @@ h2 {
 .registration-form select {
     width: 100%;
     padding: 12px;
-    border: px dotted #d9dce5;
+    border: 2px dotted #d9dce5;
     border-radius: 6px;
     font-size: 14px;
     background-color: #ffffff;
