@@ -7,19 +7,19 @@
 
 const events = {
     "Campus Music Fest": {
-        date: "12 November 2026",
+        date: "28 November 2026",
         time: "4:00 PM onwards",
         description: "A lively evening of music, performances and student talent."
     },
 
     "Business Ideas Summit": {
-        date: "18 November 2026",
+        date: "1 December 2026",
         time: "To be announced",
         description: "Share ideas, learn from discussions and explore entrepreneurship."
     },
 
     "Tech Innovation Day": {
-        date: "25 November 2026",
+        date: "4 December 2026",
         time: "To be announced",
         description: "Explore student projects, technology and creative solutions."
     }
@@ -100,7 +100,7 @@ function displayRegistrations() {
 
     if (registrations.length === 0) {
 
-        registrationList.textContent = "No registrations yet.";
+        registrationList.innerHTML = '<p class="empty-message">You have not registered for any events yet.</p>';
 
         return;
     }
